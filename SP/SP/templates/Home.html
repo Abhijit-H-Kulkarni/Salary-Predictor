@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        HOME PAGE
+    </title>
+    {% load staticfiles %}
+    <link type="text/css" rel="stylesheet" href={% static "css/materialize.css" %} media="screen,projection"/>
+    <style type="text/css">
+    body{
+        background-color: white;
+    }
+    #one{
+        cursor: pointer; 
+    }
+    </style>
+</head>
+<body>
+        <div class="card-panel  red lighten-1" style="height:130px;margin:10px;">
+            <h4 class="center-align">Salary Predictor</h4>
+        </div>   
+        <br><br>
+        <div class="center-align">
+            <video class="responsive-video" width = "640" height="480" controls>
+                    <source src="Videos/LineEffects.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="card-panel red lighten-1 hoverable" id="one" style="height: 50px;width:200px;margin-top: 70px;margin-left: 42%;border-radius: 5px;">
+            <p style="text-align: center;margin-top:-10px;" onclick="document.location.href = 'Train.html'">Train</p>
+        </div>
+        <div class="card-panel red lighten-1 hoverable" id="one" style="height: 50px;width:200px;margin-top: 50px;margin-left: 42%;border-radius: 5px;">
+            <p style="text-align: center;margin-top:-10px;" onclick="document.location.href = 'Predict.html'">Predict</p>
+        </div>  
+        <br>
+        <div class="center-align">
+            <b><p style="font-size: 10px;">&copy;SalaryPredictor2019</p></b>
+        </div>
+    {% load staticfiles %}
+    <script type="text/javascript" src={% static  "js/materialize.js"  %}></script>
+</body>
+</html>
+
